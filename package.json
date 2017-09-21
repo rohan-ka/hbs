@@ -1,0 +1,33 @@
+{
+  "name": "hb-setup",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "bin": {
+    "composer": "./dist/composer.js",
+    "build": "./dist/build.js",
+    "load": "./dist/load.js",
+    "setup": "./dist/setup.js"
+  },
+  "author": "rohan.ka",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --hide-modules --progress",
+    "lint": "eslint --fix .",
+    "prebuild": "npm run lint"
+  },
+  "dependencies": {
+    "chalk": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.7.1",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-import-resolver-webpack": "^0.8.3",
+    "eslint-plugin-import": "^2.7.0",
+    "ncp": "^2.0.0",
+    "webpack": "^3.6.0"
+  }
+}
